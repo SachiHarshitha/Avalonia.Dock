@@ -21,4 +21,8 @@
     <ProjectReference Include="..\Dock.Model\Dock.Model.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Update="reactiveui" Version="19.5.1" />
+  </ItemGroup>
+
 </Project>

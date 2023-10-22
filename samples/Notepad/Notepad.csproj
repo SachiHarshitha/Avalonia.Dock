@@ -29,4 +29,13 @@
     <UpToDateCheckInput Remove="Views\Layouts\SaveWindowLayoutWindow.axaml" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Update="Avalonia" Version="11.0.5" />
+    <PackageReference Update="Avalonia.Desktop" Version="11.0.5" />
+    <PackageReference Update="Avalonia.Diagnostics" Version="11.0.5" />
+    <PackageReference Update="Avalonia.Fonts.Inter" Version="11.0.5" />
+    <PackageReference Update="Avalonia.Themes.Fluent" Version="11.0.5" />
+    <PackageReference Update="CommunityToolkit.Mvvm" Version="8.2.1" />
+  </ItemGroup>
+
 </Project>

@@ -21,4 +21,8 @@
     <ProjectReference Include="..\Dock.Model\Dock.Model.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Update="CommunityToolkit.Mvvm" Version="8.2.1" />
+  </ItemGroup>
+
 </Project>

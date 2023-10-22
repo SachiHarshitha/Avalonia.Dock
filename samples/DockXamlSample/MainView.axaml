@@ -10,9 +10,9 @@
     <Menu Grid.Row="0">
       <MenuItem Header="_File">
         <MenuItem x:Name="FileOpenLayout" Header="_Open layout..." Click="FileOpenLayout_OnClick" />
-        <Separator/>
+        <Separator />
         <MenuItem x:Name="FileSaveLayout" Header="_Save layout..." Click="FileSaveLayout_OnClick" />
-        <Separator/>
+        <Separator />
         <MenuItem x:Name="FileCloseLayout" Header="_Close layout" Click="FileCloseLayout_OnClick" />
       </MenuItem>
     </Menu>
@@ -31,7 +31,7 @@
             <RootDock ActiveDockable="{Binding #ToolDock}" Window="{Binding #DockWindow}">
               <ToolDock x:Name="ToolDock">
                 <Tool x:Name="ToolWindow" Id="ToolWindow" Title="Tool Window" x:DataType="Tool">
-                  <TextBlock Text="{Binding Title}"/>
+                  <TextBlock Text="{Binding Title}" />
                 </Tool>
               </ToolDock>
             </RootDock>
@@ -44,7 +44,7 @@
 
           <ToolDock x:Name="LeftPane" Id="LeftPane" Proportion="0.25" Alignment="Left">
             <Tool x:Name="SolutionExplorer" Id="SolutionExplorer" Title="Solution Explorer" x:DataType="Tool">
-              <TextBlock Text="{Binding Title}"/>
+              <TextBlock Text="{Binding Title}" />
             </Tool>
           </ToolDock>
 
@@ -64,18 +64,18 @@
                 <DocumentDock.DocumentTemplate>
                   <DocumentTemplate>
                     <StackPanel x:DataType="Document">
-                      <TextBlock Text="Title"/>
-                      <TextBox Text="{Binding Title}"/>
-                      <TextBlock Text="Context"/>
-                      <TextBox Text="{Binding Context}"/>
+                      <TextBlock Text="Title" />
+                      <TextBox Text="{Binding Title}" />
+                      <TextBlock Text="Context" />
+                      <TextBox Text="{Binding Context}" />
                     </StackPanel>
                   </DocumentTemplate>
                 </DocumentDock.DocumentTemplate>
                 <Document x:Name="Document1" Id="Document1" Title="Program.cs" x:DataType="Document">
-                  <TextBlock Text="{Binding Title}"/>
+                  <TextBlock Text="{Binding Title}" />
                 </Document>
                 <Document x:Name="Document2" Id="Document2" Title="App.axaml" x:DataType="Document">
-                  <TextBlock Text="{Binding Title}"/>
+                  <TextBlock Text="{Binding Title}" />
                 </Document>
               </DocumentDock>
 
@@ -84,10 +84,9 @@
               <!-- Properties Pane -->
               <ToolDock x:Name="PropertiesPane" Id="PropertiesPane" Proportion="0.3" Alignment="Right">
                 <Tool x:Name="Properties" Id="Properties" Title="Properties" x:DataType="Tool">
-                  <TextBlock Text="{Binding Title}"/>
+                  <TextBlock Text="{Binding Title}" />
                 </Tool>
               </ToolDock>
-
             </ProportionalDock>
 
             <ProportionalDockSplitter x:Name="BottomSplitter" Id="BottomSplitter" />
@@ -96,20 +95,15 @@
 
             <ToolDock x:Name="BottomPane" Id="BottomPane" Proportion="0.3" Alignment="Bottom" ActiveDockable="Output">
               <Tool x:Name="ErrorList" Id="ErrorList" Title="Error List" x:DataType="Tool">
-                <TextBlock Text="{Binding Title}"/>
+                <TextBlock Text="{Binding Title}" />
               </Tool>
               <Tool x:Name="Output" Id="Output" Title="Output" x:DataType="Tool">
-                <TextBlock Text="{Binding Title}"/>
+                <TextBlock Text="{Binding Title}" />
               </Tool>
             </ToolDock>
-
           </ProportionalDock>
-
         </ProportionalDock>
       </RootDock>
-
     </DockControl>
-
   </Grid>
 </UserControl>
-
